@@ -1,2 +1,2 @@
-from trianglePack.triangleClass import Triangle
+from .triangleClass import Triangle
 

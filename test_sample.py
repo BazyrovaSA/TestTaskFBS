@@ -17,26 +17,26 @@ def test_line2():
     assert triangle3.existence() == False
 
 
-def test_zeroDot():
+def test_zero_dot():
     triangle4 = trianglePack.Triangle((0, 0), (0, 0), (0, 0))
     assert triangle4.existence() == False
 
 
-def test_oneDot():
+def test_one_dot():
     triangle5 = trianglePack.Triangle((1, 1), (1, 1), (1, 1))
     assert triangle5.existence() == False
 
 
-def test_twoDots1():
+def test_two_dots1():
     triangle6 = trianglePack.Triangle((1, 1), (1, 1), (2, 2))
     assert triangle6.existence() == False
 
 
-def test_twoDots2():
+def test_two_dots2():
     triangle7 = trianglePack.Triangle((2, 2), (1, 1), (1, 1))
     assert triangle7.existence() == False
 
 
-def test_twoDots3():
+def test_two_dots3():
     triangle8 = trianglePack.Triangle((1, 1), (2, 2), (1, 1))
     assert triangle8.existence() == False

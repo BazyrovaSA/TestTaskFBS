@@ -4,15 +4,15 @@ import math
 class Triangle:
     def __init__(self, a, b, c):
         # Функция вычисления длин сторон треугольника по координатам вершин
-        def sideLen(dot1, dot2):
+        def side_len(dot1, dot2):
             return math.sqrt((dot2[0] - dot1[0]) ** 2 + (dot2[1] - dot1[1]) ** 2)
         self.a = a
         self.b = b
         self.c = c
         # Вычисление длин сторон по соседним координатам
-        self.ab = (sideLen(self.a, self.b))
-        self.bc = (sideLen(self.b, self.c))
-        self.ca = (sideLen(self.c, self.a))
+        self.ab = (side_len(self.a, self.b))
+        self.bc = (side_len(self.b, self.c))
+        self.ca = (side_len(self.c, self.a))
 
     # Метод вычисления площади треугольника по формуле Герона
     def area(self):
